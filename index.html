@@ -8,13 +8,32 @@
 <body style="background-color: rgb(255, 136, 0); font-family: Comic Sans MS;" >
     <h1 style="background-color: rgb(255, 255, 255); text-align: center; font-size: 500%;">Our Show™</h1> 
     
-    <div style="display: flex; justify-content: center; gap: 10px; margin-top: 50px;">
+    <style>
+        .button-container {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          flex-wrap: wrap;
+        }
+      
+        .button-container a {
+          margin: 5px;
+        }
+      
+        @media (max-width: 600px) {
+          .button-container {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      </style>
+      
+      <div class="button-container" style="margin-top: 50px;">
         <a href="index.html"><button style="font-size: 20px; padding: 10px 60px;">Home</button></a>
         <a href="game.html"><button style="font-size: 20px; padding: 10px 60px;">News</button></a>
         <a href="game.html"><button style="font-size: 20px; padding: 10px 60px;">Entertainment</button></a>
         <a href="game.html"><button style="font-size: 20px; padding: 10px 60px;">About</button></a>
-    </div><br>
-
+      </div>
     <hr>
 
     <h2 style=text-align:center;>
@@ -23,10 +42,9 @@
     </h2>
 
     <div style="text-align: center;">
-        <img src="https://iili.io/3wA2nOQ.md.png">
+        <img src="https://iili.io/3wA2nOQ.md.png" style="width: 100%; max-width: 500px; height: auto;">
     </div>
-
-
+      
     <h2 style="text-align: center;">
         What you can expect to find on this website:<br><br>
         News & Blogs<br>
